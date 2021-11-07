@@ -11,6 +11,10 @@ const seedDatabase = async () => {
         await Project.create({...project});
     }
 
+    for (const skill of skillsData) {
+        await Skills.create({...skill});
+    }
+
     process.exit(0);
 };
 
