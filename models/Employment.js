@@ -1,9 +1,9 @@
-const { Model, DataTypes } = require('sequelize');
+const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Skills extends Model {}
+class Employment extends Model {}
 
-Skills.init(
+Employment.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -12,7 +12,7 @@ Skills.init(
             autoIncrement: true,
         },
         name: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
     },
@@ -20,8 +20,6 @@ Skills.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'skills',
+        modelName: 'employment',
     }
 );
-
-module.exports = Skills;
