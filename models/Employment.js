@@ -23,3 +23,5 @@ Employment.init(
         modelName: 'employment',
     }
 );
+
+module.exports = Employment;

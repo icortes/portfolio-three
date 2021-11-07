@@ -1,0 +1,26 @@
+[
+    {
+        "name": "E-Commerce Back End",
+        "img_path": "path_pending",
+        "github": "https://github.com/icortes/e-commerce-back-end",
+        "deployed_url": "N/A"
+    },
+    {
+        "name": "Note Taker",
+        "img_path": "path_pending",
+        "github": "https://github.com/icortes/note-taker",
+        "deployed_url": "https://evening-temple-99179.herokuapp.com/"
+    },
+    {
+        "name": "Tech Blog",
+        "img_path": "path_pending",
+        "github": "https://github.com/icortes/tech-blog",
+        "deployed_url": "https://glacial-atoll-88535.herokuapp.com/"
+    },
+    {
+        "name": "Handy Man",
+        "img_path": "path_pending",
+        "github": "https://github.com/icortes/Handy-Man",
+        "deployed_url": "https://handy-man-1024.herokuapp.com/"
+    }
+]
