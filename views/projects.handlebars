@@ -1,0 +1,27 @@
+<div class='row min-vh-100 flex-column flex-md-row'>
+    <h2>My Projects:</h2>
+
+    {{#each projects as |project|}}
+        <div class='col-12 col-md-9 col-xl-10'>
+            <div class='card'>
+                <img
+                    src='{{project.img_path}}'
+                    class='card-img-top'
+                    alt='project image'
+                />
+                <div class='card-body'>
+                    <h5 class='card-title'>{{project.name}}</h5>
+                    <ul class='list-group list-group-flush'>
+                        <li class='list-group-item'><a href='{{project.github}}' target="_blank">Github
+                                Repo</a></li>
+                        {{#if project.deployed_url}}
+                        <li class='list-group-item'><a href="{{project.deployed_url}}" target="_blank">Live Site</li>
+                        {{/if}}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+</div>
