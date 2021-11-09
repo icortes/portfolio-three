@@ -1,5 +1,22 @@
-<div class="row min-vh-100 flex-column flex-md-row">
-    <div class="col col-12 col-md-9 col-xl-10">
-
+<div class='row min-vh-100 flex-column flex-md-row'>
+    <div class='col col-12 col-md-9 col-xl-10'>
+        <div>
+            <p>Hello!</p>
+            <p>My name is Isaac. In highschool I learned about computer science
+                and Java by taking an AP Computer Science course. When I was in
+                college I learned C++ and studied it for 2 years. After that I
+                decided to take a break and started working as a cashier at
+                Whole Foods. After working there for a while I took a break
+                again and found the Berkeley Coding Bootcamp through a friend.
+            </p>
+        </div>
+        <div>
+            <p>List of Skills:</p>
+            <ul>
+                {{#each skills}}
+                <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </div>

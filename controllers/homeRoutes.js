@@ -11,8 +11,11 @@ router.get('/', async (req, res) => {
 
 router.get('/about-me', async (req, res) => {
     try {
-        const skillsData = await Skills.findAll({});
-        res.render('about-me', {skillsData});
+        const skillsData = await Skills.findAll().catch((err) => {
+            res.json(err);
+        });
+        const skills = skillsData.map((skill) => skill.get({ plain: true }));
+        res.render('about-me', {skills});
     } catch (err) {
         res.status(500).json(err);
     }
